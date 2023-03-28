@@ -4,12 +4,14 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
- const buttonCreate = document.querySelector('button.dataset.create');
-const buttonDestroy = document.querySelector('button.dataset.destroy');
+const buttonCreate = document.querySelector('button[data-create]');
+const buttonDestroy = document.querySelector('button[data-destroy]');
+
+
 
 buttonCreate.addEventListener('click', onCreate);
-buttonDestroy.addEventListener('click', onDestroy);
+// buttonDestroy.addEventListener('click', onDestory)
 
-function createBoxes(amount){
-\
+function onCreate(){
+  getRandomHexColor()
 }
