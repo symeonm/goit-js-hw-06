@@ -8,12 +8,14 @@ const ingredients = [
 ];
 
 const list = document.querySelector('#ingredients');
-
+const markup = [];
 ingredients.forEach((item) => {
   const li = document.createElement('li');
   li.textContent = item;
-  list.append(li)
+  li.classList.add('item');
+markup.push(li)
 })
+list.append(...markup)
 
 
 
